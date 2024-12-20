@@ -30,14 +30,14 @@ hex-literal = "0.4"
 
 [features]
 default = ["alloc", "getrandom"]
-std = ["aead/std", "alloc"]
+std = ["alloc"]
 alloc = ["aead/alloc"]
 arrayvec = ["aead/arrayvec"]
 bytes = ["aead/bytes"]
 getrandom = ["aead/getrandom", "rand_core"]
 heapless = ["aead/heapless"]
 rand_core = ["aead/rand_core"]
-stream = ["aead/stream"]
+stream = []
 
 [package.metadata.docs.rs]
 all-features = true

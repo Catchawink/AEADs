@@ -31,7 +31,7 @@ aead = { version = "0.6.0-rc.0", features = ["dev"], default-features = false }
 
 [features]
 default = ["alloc", "getrandom"]
-std = ["aead/std", "alloc"]
+std = ["alloc"]
 alloc = ["aead/alloc"]
 arrayvec = ["aead/arrayvec"]
 bytes = ["aead/bytes"]
@@ -39,7 +39,7 @@ getrandom = ["aead/getrandom", "rand_core"]
 heapless = ["aead/heapless"]
 rand_core = ["aead/rand_core"]
 reduced-round = []
-stream = ["aead/stream"]
+stream = []
 zeroize = ["dep:zeroize", "chacha20/zeroize"]
 
 [package.metadata.docs.rs]

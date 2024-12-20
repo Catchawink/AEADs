@@ -26,14 +26,14 @@ aead = { version = "0.6.0-rc.0", features = ["alloc"] }
 
 [features]
 default = ["alloc", "getrandom"]
-std = ["aead/std", "alloc"]
+std = ["alloc"]
 alloc = ["aead/alloc"]
 arrayvec = ["aead/arrayvec"]
 bytes = ["aead/bytes"]
 getrandom = ["aead/getrandom", "rand_core"]
 heapless = ["aead/heapless"]
 rand_core = ["aead/rand_core"]
-stream = ["aead/stream"]
+stream = []
 zeroize = ["dep:zeroize", "ascon/zeroize"]
 
 [package.metadata.docs.rs]

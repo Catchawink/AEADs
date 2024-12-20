@@ -6,8 +6,7 @@ version = 3
 [[package]]
 name = "aead"
 version = "0.6.0-rc.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b5f451b77e2f92932dc411da6ef9f3d33efad68a6f14a7a83e559453458e85ac"
+source = "git+https://github.com/Catchawink/traits.git#8bb338103292e9e709c9b45009c568ed9a6276f9"
 dependencies = [
  "arrayvec",
  "blobby",
@@ -46,20 +45,6 @@ dependencies = [
  "hex-literal",
  "subtle",
  "zeroize",
-]
-
-[[package]]
-name = "aes-gcm"
-version = "0.11.0-pre.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0cce27af05d45b901bb28da33ff8b2b2b2044f595b24fc0f36d4882dae91d484"
-dependencies = [
- "aead",
- "aes",
- "cipher",
- "ctr",
- "ghash",
- "subtle",
 ]
 
 [[package]]
@@ -497,7 +482,7 @@ version = "0.0.1-pre.0"
 dependencies = [
  "aead",
  "aes",
- "aes-gcm 0.11.0-pre.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "aes-gcm",
  "cipher",
  "hex-literal",
 ]

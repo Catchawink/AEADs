@@ -13,3 +13,7 @@ members = [
     "xaes-256-gcm",
 ]
 resolver = "2"
+
+[patch.crates-io]
+aead = { git = "https://github.com/Catchawink/traits.git" }
+aes-gcm = { path = "./aes-gcm" }

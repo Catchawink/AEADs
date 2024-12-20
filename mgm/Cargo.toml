@@ -32,12 +32,12 @@ hex-literal = "0.2"
 
 [features]
 default = ["alloc", "getrandom"]
-std = ["aead/std", "alloc"]
+std = ["alloc"]
 alloc = ["aead/alloc"]
 arrayvec = ["aead/arrayvec"]
 bytes = ["aead/bytes"]
 getrandom  = ["aead/getrandom", "rand_core"]
 heapless = ["aead/heapless"]
 rand_core = ["aead/rand_core"]
-stream = ["aead/stream"]
+stream = []
 force-soft = [] # Disable support for hardware intrinsics

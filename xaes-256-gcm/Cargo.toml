@@ -27,13 +27,13 @@ hex-literal = "0.4"
 
 [features]
 default = ["alloc", "getrandom"]
-std = ["aead/std", "aes-gcm/std", "cipher/std", "alloc"]
+std = ["aes-gcm/std", "cipher/std", "alloc"]
 alloc = ["aead/alloc", "aes-gcm/alloc"]
 arrayvec = ["aead/arrayvec", "aes-gcm/arrayvec"]
 getrandom = ["aead/getrandom", "aes-gcm/getrandom", "rand_core"]
 heapless = ["aead/heapless", "aes-gcm/heapless"]
 rand_core = ["aead/rand_core", "aes-gcm/rand_core"]
-stream = ["aead/stream", "aes-gcm/stream"]
+stream = ["aes-gcm/stream"]
 
 [package.metadata.docs.rs]
 all-features = true
