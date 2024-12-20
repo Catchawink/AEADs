@@ -27,7 +27,7 @@ hex-literal = "0.4"
 
 [features]
 default = ["alloc", "getrandom"]
-std = ["aes-gcm/std", "cipher/std", "alloc"]
+std = ["aes-gcm/std", "alloc"]
 alloc = ["aead/alloc", "aes-gcm/alloc"]
 arrayvec = ["aead/arrayvec", "aes-gcm/arrayvec"]
 getrandom = ["aead/getrandom", "aes-gcm/getrandom", "rand_core"]
